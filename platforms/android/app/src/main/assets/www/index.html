@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+    Camera plugin in worked fine with ADV's AP 27, older versions (26,25, etc...) might cause disconnect from accessing camera
+-->
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Camera Cordova</h1>
+        <button id="btn1">Capture</button>
+        <button id="btn2">Library</button><br/>
+    </div>
+    <div style="display:inline-block; text-align:center;">
+        <img id="myImg" src="">
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+<style>
+    .display {
+        height: 200px;
+        weight: 200px;
+        margin: 20px 0 20px 0;
+    }
+</style>
+
+</html>
